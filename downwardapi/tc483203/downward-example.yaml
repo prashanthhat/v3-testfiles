@@ -5,7 +5,8 @@ metadata:
 spec:
   containers:
     - name: test-container
-      image: openshift/ruby-20-centos7
+      #image: openshift/ruby-20-centos7
+      image: ruby
       command: [ "/bin/sh", "-c", "env" ]
       env:
         - name: POD_NAME

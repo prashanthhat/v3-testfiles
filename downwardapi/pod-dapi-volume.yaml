@@ -12,7 +12,8 @@ metadata:
 spec:
   containers:
     - name: client-container
-      image: gcr.io/google_containers/busybox
+      #image: gcr.io/google_containers/busybox
+      image: docker.io/busybox
       command: ["sh", "-c", "while true; do if [[ -e /var/tmp/podinfo/labels ]]; then cat /var/tmp/podinfo/labels; fi; if [[ -e /var/tmp/podinfo/annotations ]]; then cat /var/tmp/podinfo/annotations; fi; sleep 5; done"]
       securityContext:
         privileged: false
