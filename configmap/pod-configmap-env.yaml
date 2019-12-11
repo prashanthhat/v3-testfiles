@@ -5,7 +5,8 @@ metadata:
 spec:
   containers:
     - name: test-container
-      image: gcr.io/google_containers/busybox
+      image: busybox
+#      image: gcr.io/google_containers/busybox
       command: [ "/bin/sh", "-c", "env" ]
       env:
         - name: SPECIAL_LEVEL_KEY
