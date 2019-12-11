@@ -11,6 +11,7 @@ spec:
     spec:
       containers:
       - name: hello-openshift
-        image: openshift/hello-openshift
+        image: openshifttests/hello-openshift
+        #image: openshift/hello-openshift
         ports:
         - containerPort: 8080
