@@ -17,7 +17,8 @@ spec:
     spec:
       containers:
       - name: hello-openshift
-        image: openshift/hello-openshift
+        image: openshifttests/hello-openshift
+#        image: openshift/hello-openshift
         resources:
           limits:
             memory: 256Mi
