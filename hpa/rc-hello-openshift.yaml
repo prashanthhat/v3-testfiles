@@ -15,7 +15,8 @@ spec:
         run: hello-openshift
     spec: 
         containers:
-        - image: openshift/hello-openshift
+        #- image: openshift/hello-openshift
+        - image: openshifttests/hello-openshift
           imagePullPolicy: Always
           name: hello-openshift
           ports:
