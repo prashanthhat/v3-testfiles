@@ -9,17 +9,6 @@
     }
   },
   "objects": [
- {
-  "apiVersion": "v1",
-  "kind": "Secret",
-  "metadata": {
-    "name": "redhatreg"
-      },
-  "data": {
-    ".dockerconfigjson": "eyJhdXRocyI6eyJyZWdpc3RyeS5yZWRoYXQuaW8iOnsidXNlcm5hbWUiOiJyYWh1c2luZyIsInBhc3N3b3JkIjoiUmFodWxzaW5naEBpYm0yIiwiYXV0aCI6ImNtRm9kWE5wYm1jNlVtRm9kV3h6YVc1bmFFQnBZbTB5IiwiZW1haWwiOiJyYWh1c2luZ0ByZWRoYXQuY29tIn19fQ=="
-  },
-  "type": "kubernetes.io/dockerconfigjson"
-      },
      {
       "kind": "Service",
       "apiVersion": "v1",
@@ -48,6 +37,17 @@
         "loadBalancer": {}
       }
     },
+   {
+  "apiVersion": "v1",
+  "kind": "Secret",
+  "metadata": {
+    "name": "redhatreg"
+      },
+  "data": {
+    ".dockerconfigjson": "eyJhdXRocyI6eyJyZWdpc3RyeS5yZWRoYXQuaW8iOnsidXNlcm5hbWUiOiJyYWh1c2luZyIsInBhc3N3b3JkIjoiUmFodWxzaW5naEBpYm0yIiwiYXV0aCI6ImNtRm9kWE5wYm1jNlVtRm9kV3h6YVc1bmFFQnBZbTB5IiwiZW1haWwiOiJyYWh1c2luZ0ByZWRoYXQuY29tIn19fQ=="
+  },
+  "type": "kubernetes.io/dockerconfigjson"
+      },
     {
       "kind": "Route",
       "apiVersion": "v1",
