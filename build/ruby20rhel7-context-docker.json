@@ -136,7 +136,7 @@
           "dockerStrategy": {
             "from": {
               "kind": "DockerImage",
-              "name": "registry.redhat.io/rhscl/ruby-25-rhel7"
+              "name": "registry.redhat.io/rhscl/ruby-25-rhel7",
 	      "pullSecret": "redhatreg"
             },
             "env": [
