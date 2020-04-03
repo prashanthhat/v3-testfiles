@@ -129,6 +129,7 @@
           "type": "Git",
           "git": {
             "uri": "https://github.com/prashanthhat/ruby-hello-world-context.git"
+	    "ref": "ppc64le"
           },
           "contextDir": "test"
         },
