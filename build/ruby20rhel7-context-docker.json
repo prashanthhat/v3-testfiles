@@ -48,22 +48,7 @@
   },
   "type": "kubernetes.io/dockerconfigjson"
       },
-{
-  "kind": "ServiceAccount",
-  "apiVersion": "v1",
-  "name": "builder",
-  "metadata": null,
-  "secrets": [
-    {
-      "name": "redhatreg"
-    }
-  ],
-  "imagePullSecrets": [
-    {
-      "name": "redhatreg"
-    }
-  ]
-},
+
     {
      "kind": "Route",
       "apiVersion": "v1",
@@ -108,6 +93,36 @@
         "dockerImageRepository": ""
       }
     },
+	 {
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "name": "ruby20-sample-build-1-build"
+  },
+  "spec": {
+    "containers": [
+      {
+        "name": "docker-build",
+        "volumeMounts": [
+          {
+            "name": "redhatreg-pull",
+            "mountPath": "/var/run/secrets/openshift.io/pull",
+            "readOnly": true
+          }
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "name": "redhatreg-pull",
+        "secret": {
+          "secretName": "redhatreg"
+        }
+      }
+    ],
+    "restartPolicy": "Never"
+  }
+}
     {
       "kind": "BuildConfig",
       "apiVersion": "v1",
