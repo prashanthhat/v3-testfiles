@@ -122,8 +122,8 @@
     ],
     "restartPolicy": "Never"
   }
-},
-    {
+    },
+  {
       "kind": "BuildConfig",
       "apiVersion": "v1",
       "metadata": {
