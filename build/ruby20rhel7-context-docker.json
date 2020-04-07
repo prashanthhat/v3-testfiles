@@ -48,12 +48,10 @@
   },
   "type": "kubernetes.io/dockerconfigjson"
       },
-	  {
+{
   "kind": "ServiceAccount",
   "apiVersion": "v1",
-  "metadata": {
-    "name": "builder"
-  },
+  "name": "builder",
   "imagePullSecrets": [
     {
       "name": "redhatreg"
