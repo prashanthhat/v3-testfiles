@@ -59,7 +59,7 @@
       "name": "redhatreg"
     }
   ]
-}
+},
     {
      "kind": "Route",
       "apiVersion": "v1",
