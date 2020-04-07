@@ -93,34 +93,6 @@
         "dockerImageRepository": ""
       }
     },
-	 {
-  "apiVersion": "v1",
-  "kind": "Pod",
-  "name": "ruby20-sample-build-1-build",
-  "spec": {
-    "containers": [
-      {
-        "name": "docker-build",
-        "volumeMounts": [
-          {
-            "name": "redhatreg-pull",
-            "mountPath": "/var/run/secrets/openshift.io/pull",
-            "readOnly": true
-          }
-        ]
-      }
-    ],
-    "volumes": [
-      {
-        "name": "redhatreg-pull",
-        "secret": {
-          "secretName": "redhatreg"
-        }
-      }
-    ],
-    "restartPolicy": "Never"
-  }
-},
   {
       "kind": "BuildConfig",
       "apiVersion": "v1",
