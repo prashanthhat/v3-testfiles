@@ -52,6 +52,12 @@
   "kind": "ServiceAccount",
   "apiVersion": "v1",
   "name": "builder",
+  "metadata": null,
+  "secrets": [
+    {
+      "name": "redhatreg"
+    }
+  ],
   "imagePullSecrets": [
     {
       "name": "redhatreg"
