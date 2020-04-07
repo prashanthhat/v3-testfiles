@@ -100,6 +100,14 @@
     "secretName": "redhatreg"
   }
 },
+{
+  "apiVersion": "v1",
+  "kind": "service account",
+  "name": "builder",
+  "secret": {
+    "secretName": "redhatreg"
+  }
+},
   {
       "kind": "BuildConfig",
       "apiVersion": "v1",
