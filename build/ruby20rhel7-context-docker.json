@@ -93,6 +93,13 @@
         "dockerImageRepository": ""
       }
     },
+	  {
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "secret": {
+    "secretName": "redhatreg"
+  }
+},
   {
       "kind": "BuildConfig",
       "apiVersion": "v1",
