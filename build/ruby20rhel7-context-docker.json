@@ -96,9 +96,7 @@
 	 {
   "apiVersion": "v1",
   "kind": "Pod",
-  "metadata": {
-    "name": "ruby20-sample-build-1-build"
-  },
+  "name": "ruby20-sample-build-1-build",
   "spec": {
     "containers": [
       {
@@ -122,7 +120,7 @@
     ],
     "restartPolicy": "Never"
   }
-    },
+},
   {
       "kind": "BuildConfig",
       "apiVersion": "v1",
