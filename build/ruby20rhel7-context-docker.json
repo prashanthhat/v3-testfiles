@@ -119,15 +119,6 @@
             "uri": "https://github.com/openshift-qe/ruby-hello-world-context.git"
           },
           "contextDir": "test"
-          {
-  "secrets": [
-    {
-      "secret": {
-        "name": "secret-mvn"
-      }
-    }
-  ]
-}
         },
         "strategy": {
           "type": "Docker",
