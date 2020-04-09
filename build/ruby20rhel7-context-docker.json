@@ -91,10 +91,9 @@
       },
       "status": {
         "dockerImageRepository": ""
-      }
-    },
-	    {
-  "kind": "ServiceAccount",
+      },
+	  {  
+	  "kind": "ServiceAccount",
   "apiVersion": "v1",
   "metadata": {
     "creationTimestamp": null,
