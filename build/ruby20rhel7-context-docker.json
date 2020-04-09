@@ -148,7 +148,7 @@
             "type": "ConfigChange"
           }
         ],
-	"serviceAccount": "builder",
+	"serviceAccount": "ruby20-sample-build",
         "source": {
           "type": "Git",
           "git": {
