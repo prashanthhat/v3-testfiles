@@ -115,12 +115,11 @@
   ]
 },
 
-  {
+   {
       "kind": "BuildConfig",
       "apiVersion": "v1",
       "metadata": {
         "name": "ruby20-sample-build",
-	"pullSecret": "redhatreg",
         "creationTimestamp": null,
         "labels": {
           "name": "ruby20-sample-build"
@@ -148,12 +147,10 @@
             "type": "ConfigChange"
           }
         ],
-	"serviceAccount": "ruby20-sample-build",
         "source": {
           "type": "Git",
           "git": {
-            "uri": "https://github.com/prashanthhat/ruby-hello-world-context.git",
-	    "ref": "ppc64le"
+            "uri": "https://github.com/prashanthhat/ruby-hello-world-context.git"
           },
           "contextDir": "test"
         },
@@ -162,7 +159,7 @@
           "dockerStrategy": {
             "from": {
               "kind": "DockerImage",
-              "name": "registry.redhat.io/rhscl/ruby-25-rhel7"
+              "name": "docker.io/centos/ruby-22-centos7"
             },
             "env": [
               {
@@ -171,6 +168,9 @@
               }
             ]
           }
+          "pullSecret": {
+        "name": "external-registry"
+      }
         },
         "output": {
           "to": {
