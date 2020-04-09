@@ -164,9 +164,6 @@
               "kind": "DockerImage",
               "name": "registry.redhat.io/rhscl/ruby-25-rhel7",
             },
-          "pullSecret": {
-        "name": "redhatreg"
-      },
             "env": [
               {
                 "name": "EXAMPLE",
@@ -175,6 +172,9 @@
             ]
           }
         },
+	      "pullSecret": {
+        "name": "redhatreg"
+      },
         "output": {
           "to": {
             "kind": "ImageStreamTag",
