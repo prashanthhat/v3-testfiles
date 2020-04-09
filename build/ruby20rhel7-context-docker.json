@@ -172,9 +172,6 @@
             ]
           }
         },
-	   "pullSecret": {
-        "name": "external-registry"
-      },
         "output": {
           "to": {
             "kind": "ImageStreamTag",
