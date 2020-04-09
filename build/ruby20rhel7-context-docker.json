@@ -120,6 +120,7 @@
       "apiVersion": "v1",
       "metadata": {
         "name": "ruby20-sample-build",
+      "pullsecret": "redhatreg",
         "creationTimestamp": null,
         "labels": {
           "name": "ruby20-sample-build"
@@ -150,7 +151,8 @@
         "source": {
           "type": "Git",
           "git": {
-            "uri": "https://github.com/prashanthhat/ruby-hello-world-context.git"
+            "uri": "https://github.com/prashanthhat/ruby-hello-world-context.git",
+          "ref": "ppc64le"
           },
           "contextDir": "test"
         },
@@ -159,7 +161,8 @@
           "dockerStrategy": {
             "from": {
               "kind": "DockerImage",
-              "name": "docker.io/centos/ruby-22-centos7"
+              "name": "registry.redhat.io/rhscl/ruby-25-rhel7",
+              "pullsecret": "redhatreg"
             },
             "env": [
               {
