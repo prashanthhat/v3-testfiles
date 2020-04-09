@@ -92,6 +92,7 @@
       "status": {
         "dockerImageRepository": ""
       }
+    },
 	    {
   "kind": "ServiceAccount",
   "apiVersion": "v1",
