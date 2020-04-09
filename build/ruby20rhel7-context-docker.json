@@ -93,6 +93,27 @@
         "dockerImageRepository": ""
       }
     },
+{
+  "kind": "ServiceAccount",
+  "apiVersion": "v1",
+  "metadata": {
+    "creationTimestamp": null,
+    "labels": {
+      "name": "ruby20-sample-build"
+    },
+    "name": "ruby20-sample-build"
+  },
+  "secrets": [
+    {
+      "name": "redhatreg"
+    }
+  ],
+  "imagePullSecrets": [
+    {
+      "name": "redhatreg"
+    }
+  ]
+},
 
   {
       "kind": "BuildConfig",
