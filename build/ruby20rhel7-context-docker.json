@@ -98,7 +98,7 @@
   "metadata": {
     "creationTimestamp": null,
     "labels": {
-      "name": "ruby20-sample-build"
+      "name": "builder"
      }
     },
   "secrets": [
