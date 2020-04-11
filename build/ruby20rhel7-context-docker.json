@@ -94,6 +94,25 @@
   "type": "kubernetes.io/dockerconfigjson"
       },
 
+  "kind": "ServiceAccount",
+  "apiVersion": "v1",
+  "metadata": {
+    "creationTimestamp": null,
+    "labels": {
+      "name": "builder1"
+     }
+    },
+  "secrets": [
+    {
+      "name": "external-registry"
+    }
+  ],
+  "imagePullSecrets": [
+    {
+      "name": "external-registry"
+    }
+  ]
+},
     {
       "kind": "BuildConfig",
       "apiVersion": "v1",
