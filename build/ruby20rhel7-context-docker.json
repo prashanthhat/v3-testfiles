@@ -37,17 +37,7 @@
         "loadBalancer": {}
       }
     },
-   {
-  "apiVersion": "v1",
-  "kind": "Secret",
-  "metadata": {
-    "name": "external-regitry"
-      },
-  "data": {
-    ".dockerconfigjson": "ewoJImF1dGhzIjogewoJCSJyZWdpc3RyeS5yZWRoYXQuaW8iOiB7CgkJCSJhdXRoIjogImNtRm9kWE5wYm1jNlVtRm9kV3h6YVc1bmFFQnBZbTB5IgoJCX0KCX0KfQ=="
-  },
-  "type": "kubernetes.io/dockerconfigjson"
-      },
+ 
     {
      "kind": "Route",
       "apiVersion": "v1",
@@ -92,24 +82,7 @@
         "dockerImageRepository": ""
       }
     },
-{
-  "kind": "ServiceAccount",
-  "apiVersion": "v1",
-  "metadata": {
-    "creationTimestamp": null,
-      "name": "builder"
-    },
-  "secrets": [
-    {
-      "name": "external-registry"
-    }
-  ],
-  "imagePullSecrets": [
-    {
-      "name": "external-registry"
-    }
-  ]
-},
+
     {
       "kind": "BuildConfig",
       "apiVersion": "v1",
