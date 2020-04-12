@@ -126,9 +126,6 @@
         }
       },
       "spec": {
-        {
-    "serviceAccount": "ruby20-sample-build"
-         },
         "triggers": [
           {
             "type": "github",
@@ -160,6 +157,7 @@
         },
         "strategy": {
           "type": "Docker",
+             "serviceAccount": "ruby20-sample-build"
           "dockerStrategy": {
             "from": {
               "kind": "DockerImage",
