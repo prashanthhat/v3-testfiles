@@ -126,6 +126,9 @@
         }
       },
       "spec": {
+        {
+    "serviceAccount": "builder"
+         }
         "triggers": [
           {
             "type": "github",
@@ -147,9 +150,6 @@
             "type": "ConfigChange"
           }
         ],
-        {
-    "serviceAccount": "builder"
-  },
         "source": {
           "type": "Git",
           "git": {
