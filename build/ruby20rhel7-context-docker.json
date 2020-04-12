@@ -127,8 +127,8 @@
       },
       "spec": {
         {
-    "serviceAccount": "builder"
-         }
+    "serviceAccount": "ruby20-sample-build"
+         },
         "triggers": [
           {
             "type": "github",
