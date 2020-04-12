@@ -96,12 +96,13 @@
     {
   "kind": "ServiceAccount",
   "apiVersion": "v1",
-  "metadata": {
+   "metadata": {
     "creationTimestamp": null,
     "labels": {
-      "name": "builder1"
-     }
+      "name": "ruby20-sample-build"
     },
+    "name": "ruby20-sample-build"
+  },
   "secrets": [
     {
       "name": "external-registry"
