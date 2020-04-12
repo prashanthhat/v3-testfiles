@@ -126,6 +126,7 @@
         }
       },
       "spec": {
+         "serviceAccount": "builder"
         "triggers": [
           {
             "type": "github",
