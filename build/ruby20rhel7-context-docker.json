@@ -162,7 +162,7 @@
             "from": {
               "kind": "DockerImage",
               "name": "registry.redhat.io/rhscl/ruby-25-rhel7",
-              "pullsecret": "external-registry"
+              "pullSecret": "external-registry"
             },
             "env": [
               {
