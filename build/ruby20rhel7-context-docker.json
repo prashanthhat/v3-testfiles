@@ -125,7 +125,8 @@
           "name": "ruby20-sample-build"
         }
       },
-      "spec": {
+      "spec": 
+         {
         "triggers": [
           {
             "type": "github",
@@ -155,15 +156,22 @@
           },
           "contextDir": "test"
         },
+         "ServiceAccount": {
+            "name": "ruby20-sample-build"
+          },
+         "pullSecret": {
+            "name": "external-registry"
+          },
         "strategy": {
           "type": "Docker",
-          "serviceAccount": "ruby20-sample-build",
           "dockerStrategy": {
             "from": {
               "kind": "DockerImage",
               "name": "registry.redhat.io/rhscl/ruby-25-rhel7",
-             "pullSecret": "external-registry"
             },
+            "pullSecret": {
+            "name": "external-registry"
+          },
             "env": [
               {
                 "name": "EXAMPLE",
