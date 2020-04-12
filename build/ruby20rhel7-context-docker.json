@@ -147,7 +147,9 @@
             "type": "ConfigChange"
           }
         ],
-        "serviceAccount": "builder"
+        {
+    "serviceAccount": "builder"
+  },
         "source": {
           "type": "Git",
           "git": {
