@@ -157,7 +157,7 @@
         },
         "strategy": {
           "type": "Docker",
-          "serviceAccount": "ruby20-sample-build"
+          "serviceAccount": "ruby20-sample-build",
           "dockerStrategy": {
             "from": {
               "kind": "DockerImage",
