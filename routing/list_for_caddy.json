@@ -22,7 +22,7 @@
                     "spec": {
                         "containers": [
                             {
-                                "image": "multiarch-origin-e2e / caddy-docker",
+                                "image": "multiarch-origin-e2e/caddy-docker",
                                 "name": "caddy-pod"
                             }
                         ]
