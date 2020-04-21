@@ -22,7 +22,7 @@
                     "spec": {
                         "containers": [
                             {
-                                "image": "aosqe/pod-for-ping",
+                                "image": "quay.io/multiarch-origin-e2e/pod-for-ping:latest",
                                 "name": "test-pod",
                                 "imagePullPolicy": "IfNotPresent",
                                 "resources":{
