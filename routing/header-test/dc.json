@@ -18,7 +18,7 @@
         "containers": [
           {
             "name": "header-test-container",
-            "image": "aosqe/http-header-test",
+            "image": "quay.io/multiarch-origin-e2e/http-header-test",
             "ports": [
               {
                 "containerPort": 8080,
